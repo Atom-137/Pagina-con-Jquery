@@ -553,3 +553,171 @@ footer .footer-redes a{
 footer .footer-redes a:hover{
   color: #0089E0;
 }
+
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width:1040px){
+  /* Nuestro equipo */
+  .main .nuestro-equipo .titulo-seccion{
+    margin-bottom: 60px;
+  }
+
+  .main .nuestro-equipo .equipo .persona-equipo{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .main .nuestro-equipo .equipo .persona-equipo:first-child{
+    top: -20px;
+  }
+  .main .nuestro-equipo .equipo .persona-equipo .foto{
+    margin-right: 20px;
+  }
+  /* Informaicon extra */
+  .main .info-extra .contenedor .info{
+    width: 100%;
+  }
+  .main .info-extra .contenedor .foto{
+    display: none;
+  }
+}
+
+@media screen and (max-width:900px){
+  /* Encabezado */
+  .menu-bar-pc{
+    display: none;
+  }
+
+  .menu-mobile{
+    display: block;
+    width: 100%;
+    padding: 5px 18px;
+    background: #fff;
+    color: #444444;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .menu-mobile .barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-mobile .barra .logo{
+    width: 40px;
+  }
+  .menu-mobile .barra a i{
+    font-size: 1.4rem;
+    color: #444444;
+  }
+  .menu-mobile .menu-principal{
+    width: 80%;
+    display: block;
+    position: fixed;
+    top: 56px;
+    left: -100%;
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+    border-rigth: 1px solid rgba(204,204,204,0.5);
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.2);
+    background: #fff;
+    padding: 0;
+    text-align: center;
+  }
+  .menu-mobile .menu-principal a{
+    display: block;
+    padding: 10px;
+    color: #444444;
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+  }
+
+  .menu-mobile .menu-principal a:hover{
+    background: #f7f7f7;
+  }
+
+  .fixed-header{
+    display: none;
+  }
+
+  /* MAIN */
+  .main{
+    margin-top: 0;
+  }
+
+  /* Acerca de */
+  .main .acerca-de .contenedor .titulo-seccion, .main .acerca-de .contenedor .texto-acerca-de{
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Formulario de contacto */
+  .main .contacto .contenedor-formulario .formulario{
+    width: 100%;
+    text-align: center;
+  }
+  .main .contacto .contenedor-formulario .foto{
+    display: none;
+  }
+  .main .contacto .contenedor-formulario .formulario form input[type="text"],  .main .contacto .contenedor-formulario .formulario form input[type="email"], .main .contacto .contenedor-formulario .formulario form textarea{
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width:550px){
+  /* Banner principal */
+  .main .banner-principal .texto-banner h1{
+    font-size: 4rem;
+  }
+
+  /* Titulos secciones*/
+  .titulo-seccion h2{
+    font-size: 2.125rem;
+  }
+
+  /* Proyectos */
+
+  .main .proyectos .galeria-proyectos .proyecto{
+    width: 48%;
+  }
+
+  /* Nuestro equipo */
+  .main .nuestro-equipo .equipo .persona-equipo{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Informacion extra */
+  .main .info-extra .contenedor .info .contenido-info{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .main .info-extra .contenedor .info .contenido-info .icono-info{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .main .info-extra .contenedor .info .contenido-info .icono-info i{
+    font-size: 3.5rem;
+  }
+
+  .main .info-extra .contenedor .info .contenido-info .texto-info{
+    margin-left: 0;
+  }
+
+  .main .info-extra .contenedor .info .contenido-info .texto-info h4{
+    font-size: 1.175rem;
+  }
+  .main .info-extra .contenedor .info .contenido-info:first-child{
+    margin-bottom: 40px;
+  }
+  /*Contacto*/
+  .main .contacto .contenedor-formulario .formulario{
+    padding: 70px 40px;
+  }
+}

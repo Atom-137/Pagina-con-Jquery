@@ -245,3 +245,311 @@ body{
   font-size: 1rem;
   font-weight: 400;
 }
+
+
+/* Slider */
+
+.main .contenedor-slider{
+  width: 100%;
+  overflow: hidden;
+  background: #F3F4FA;
+  padding: 54px 0;
+  position: relative;
+}
+
+.main .contenedor-slider .slider{
+  width: 400%;
+  display: flex;
+}
+
+.main .contenedor-slider .slider .slide{
+  width: 15%;
+  max-width: 950px;
+  margin-right: 0.7%;
+  box-shadow: 0px 20px 40px #aaa;
+}
+
+
+.main .contenedor-slider .slider .slide img{
+  width: 100%;
+  vertical-align: top;
+}
+
+.main .contenedor-slider .btn-anterior, .main .contenedor-slider .btn-siguiente{
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.main .contenedor-slider .btn-anterior{
+  left: 2%;
+}
+
+.main .contenedor-slider .btn-siguiente{
+  right: 2%;
+}
+
+.main .contenedor-slider .btn-anterior i, .main .contenedor-slider .btn-siguiente i{
+  color: #fff;
+}
+
+.main .contenedor-slider .btn-anterior i:hover, .main .contenedor-slider .btn-siguiente i:hover{
+  color: #0089E0;
+}
+
+
+/* Nuestro equipo */
+.main .nuestro-equipo{
+  background: #F3F4FA;
+  padding-top: 54px;
+  padding-bottom: 108px;
+}
+
+.main .nuestro-equipo .equipo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo{
+  background: #fff;
+  padding: 50px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo:first-child, .main .nuestro-equipo .equipo .persona-equipo:last-child{
+  position: relative;
+  top: 20px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .foto{
+  width: 50%;
+  max-width: 100px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.main .nuestro-equipo .equipo .persona-equipo .foto img{
+  width: 100%;
+  border-radius: 100%;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto h3{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #0089E0;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto h4{
+  color: #979797;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+
+.main .nuestro-equipo .equipo .persona-equipo .texto p{
+  color: #979797;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Seccion exra */
+
+.main .info-extra{
+  background: #191919;
+  padding: 130px 0;
+}
+
+.main .info-extra .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.main .info-extra .contenedor .info{
+  width: 50%;
+}
+
+.main .info-extra .contenedor .info .contenido-info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.main .info-extra .contenedor .info .contenido-info:first-child{
+  margin-bottom: 30px;
+}
+
+.main .info-extra .contenedor .info .contenido-info .icono-info{
+  width: 5%;
+}
+
+.main .info-extra .contenedor .info .contenido-info .icono-info i{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.main .info-extra .contenedor .info .contenido-info .texto-info{
+  margin-left: 5%;
+}
+
+.main .info-extra .contenedor .info .contenido-info .texto-info h4{
+  font-size: 1.875rem;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.main .info-extra .contenedor .info .contenido-info .texto-info p{
+  color: #979797;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.main .info-extra .contenedor .foto{
+  width: 50%;
+  height: 300px;
+  box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
+  background-image: url('../img/info-foto.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* Contacto */
+
+.main .contacto{
+  padding: 190px 0;
+  background-image: url('../img/bg-contacto.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main .contacto .contenedor-formulario{
+  background: #fff;
+  min-height: 485px;
+  border-radius: 3px;
+  box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .contacto .contenedor-formulario .formulario{
+  width: 50%;
+  padding: 70px;
+}
+
+.main .contacto .contenedor-formulario .formulario h2{
+  font-size: 1.375rem;
+  line-height: 24px;
+  color: #0089E0;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.main .contacto .contenedor-formulario .formulario p{
+  color: #979797;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.main .contacto .contenedor-formulario .formulario form input[type="text"], .main .contacto .contenedor-formulario .formulario form input[type="email"]{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #979797;
+  font-size: .9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.main .contacto .contenedor-formulario .formulario form textarea{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  outline: none;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 88px;
+  min-height: 88px;
+  color: #979797;
+  margin-bottom: 10px;
+  font-size: .9rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0;
+}
+
+.main .contacto .contenedor-formulario .formulario form input[type="submit"]{
+  width: 100%;
+  border: none;
+  border: 1px solid #0089E0;
+  padding: 8px;
+  background: #0089E0;
+  color: #fff;
+  font-size: .9rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all .7s ease;
+}
+
+.main .contacto .contenedor-formulario .formulario form input[type="submit"]:hover{
+  background: #fff;
+  color: #0089E0;
+}
+
+.main .contacto .contenedor-formulario .foto{
+  width: 50%;
+  background-image: url('../img/foto-contacto.jpg');
+  background-size: cover;
+}
+
+
+
+/* PIE DE PAGINA */
+footer{
+  background: F3F4FA;
+  padding: 54px 0;
+  text-align: center;
+}
+
+footer .copy{
+  color:#979797;
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+footer .footer-redes a{
+  display: inline-block;
+  padding: 0 10px;
+  color: #979797;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  transition: all .3s ease;
+}
+
+footer .footer-redes a:hover{
+  color: #0089E0;
+}

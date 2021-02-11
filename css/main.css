@@ -583,8 +583,14 @@ body{
   background-image: url('../img/foto-contacto.jpg');
   background-size: cover;
 }
-
-
+/* Mensaje de error */
+.main .contacto .contenedor-formulario .formulario form .error{
+  display: none;
+  color: #ff8c8c;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
 
 /* PIE DE PAGINA */
 footer{

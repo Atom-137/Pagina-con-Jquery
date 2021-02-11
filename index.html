@@ -258,18 +258,21 @@
           <div class="contacto" id="contacto" data-parallax="scroll" data-image-src="img/bg-contacto.jpg">
             <div class="contenedor">
               <div class="contenedor-formulario">
-                <div class="formulario">
+                <div class="formulario" id="formulario">
                   <h2>Cuentanos sobre tu proyecto</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, obcaecati.</p>
                   <form >
                     <div>
-                      <input type="text" name="nombre" placeholder="Nombre">
+                      <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                      <p class="error">Por favor escribe tu nombre</p>
                     </div>
                     <div>
-                      <input type="email" name="email" placeholder="Correo electrónico">
+                      <input type="email" name="email" placeholder="Correo electrónico" id="email">
+                      <p class="error">Por favor ingresa tu correo electrónico</p>
                     </div>
                     <div>
-                      <textarea name="mensaje" placeholder="Cuentanos de tu proyecto"></textarea>
+                      <textarea name="mensaje" placeholder="Cuentanos de tu proyecto" id="mensaje"></textarea>
+                      <p class="error">Por favor escribe un mensaje</p>
                     </div>
                     <div>
                       <input type="submit" name="enviar" value="Enviar">
@@ -308,6 +311,10 @@
       <script src="js/scrollSuave.js"></script>
       <script src="js/modal.js"></script>
       <script src="js/slider.js"></script>
+      <script src="js/validacion.js"></script>
+
+
+
       <!-- <script src="js/bgParallax.js"></script> -->
       <script src="js/parallax.min.js"></script>
       <!-- Prefix free siempre al final -->
